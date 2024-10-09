@@ -3,7 +3,7 @@ using System.Runtime.Serialization;
 namespace MVC;
 public class Controller
 {
-    bool done = false;
+    bool exit = false;
     bool subtaskDone = false;
     private Model _model;
     private View _view;
@@ -15,9 +15,9 @@ public class Controller
     }
 
     public void Run(){
-        done = false;
+        exit = false;
         subtaskDone = false;
-        while(!done)
+        while(!exit)
         {
             Console.WriteLine("Waiting for user input. Enter 'Help' for available commands");
             string? input = Console.ReadLine();
@@ -54,7 +54,7 @@ public class Controller
                         Console.WriteLine("Successfully deleted movie!");
                     }
             }
-            else if(input == "Exit" || input == "End"){Console.WriteLine("Closing application. Enter anything to exit..."); Console.ReadLine(); done = true;}
+            else if(input == "Exit" || input == "End"){Console.WriteLine("Closing application. Enter anything to exit..."); Console.ReadLine(); exit = true;}
             else if(input == "Help") {
                 Console.WriteLine("View all - Displays all movies in the model");
                 Console.WriteLine("Add - Add movie to model");
