@@ -33,7 +33,7 @@ public class Controller
                     Console.WriteLine("Trying to update movie.");
                     Console.WriteLine("Enter movie title to update:");
                     string? _title = Console.ReadLine();
-                    Movie movieToUpdate = _model.FindMovie(_title);
+                    Movie movieToUpdate = _model.FindMovie(_title!);
                     if(movieToUpdate == null) Console.WriteLine("Could not find movie by that title. Are you sure it has been added?");
                     else{
                         Movie updatedMovie = CreateMovie();
@@ -47,20 +47,20 @@ public class Controller
                     Console.WriteLine("Trying to delete movie.");
                     Console.WriteLine("Enter movie title to delete:");
                     string? _title = Console.ReadLine();
-                    Movie movieToDelete = _model.FindMovie(_title);
+                    Movie movieToDelete = _model.FindMovie(_title!);
                     if(movieToDelete == null) Console.WriteLine("Could not find movie by that title. Are you sure it has been added?");
                     else{
                         _model.DeleteMovie(movieToDelete);
                         Console.WriteLine("Successfully deleted movie!");
                     }
             }
-            else if(input == "Done"){Console.WriteLine("Closing application. Enter anything to exit..."); Console.ReadLine(); done = true;}
+            else if(input == "Exit" || input == "End"){Console.WriteLine("Closing application. Enter anything to exit..."); Console.ReadLine(); done = true;}
             else if(input == "Help") {
                 Console.WriteLine("View all - Displays all movies in the model");
                 Console.WriteLine("Add - Add movie to model");
                 Console.WriteLine("Update - Update movie in model");
                 Console.WriteLine("Delete - Delete movie in model");
-                Console.WriteLine("Done - Exit the application");
+                Console.WriteLine("Exit - Exit the application");
                 Console.WriteLine("Help - Display available commands");
             }
             else Console.WriteLine("Please enter a valid command. Enter 'Help' to view available commands");
@@ -89,7 +89,7 @@ public class Controller
                     string? _genre = Console.ReadLine();
                     if(_genre == "") Console.WriteLine("Please enter a valid genre");
                     else { 
-                        _newMovie = new Movie(_title,parsedNumber,_genre);
+                        _newMovie = new Movie(_title!,parsedNumber,_genre!);
                         return _newMovie;
                     }
                 }  
