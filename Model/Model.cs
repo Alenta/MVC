@@ -1,3 +1,4 @@
+using System.ComponentModel;
 using System.Dynamic;
 
 public class Movie{
@@ -33,7 +34,7 @@ public class Model(){
         {
             if(movieTitle == movie.Title) return movie;
         }
-        return null;
+        throw new WarningException("Cannot find movie by that title. Are you sure it exists?");
     }
     
 }

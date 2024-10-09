@@ -3,11 +3,8 @@ using System.Runtime.Serialization;
 namespace MVC;
 public class Controller
 {
-    Model model = new Model();
-
     bool done = false;
     bool subtaskDone = false;
-    bool numbersParsed = false;
     private Model _model;
     private View _view;
 
@@ -20,7 +17,6 @@ public class Controller
     public void Run(){
         done = false;
         subtaskDone = false;
-        numbersParsed = false;
         while(!done)
         {
             Console.WriteLine("Waiting for user input. Enter 'Help' for available commands");
@@ -43,7 +39,6 @@ public class Controller
                         _model.UpdateMovie(movieToUpdate, updatedMovie);
                         subtaskDone = true;
                     }
-
                 }
             }
             else if(input == "Delete"){
