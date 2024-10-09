@@ -25,6 +25,7 @@ public class Controller
             else if(input == "Add")
             {
                 _model.AddMovie(CreateMovie());
+                Console.WriteLine("Successfully added movie!");
             }
             else if(input == "Update"){
                 subtaskDone = false;
@@ -38,6 +39,7 @@ public class Controller
                         Movie updatedMovie = CreateMovie();
                         _model.UpdateMovie(movieToUpdate, updatedMovie);
                         subtaskDone = true;
+                        Console.WriteLine("Successfully updated movie!");
                     }
                 }
             }
@@ -49,6 +51,7 @@ public class Controller
                     if(movieToDelete == null) Console.WriteLine("Could not find movie by that title. Are you sure it has been added?");
                     else{
                         _model.DeleteMovie(movieToDelete);
+                        Console.WriteLine("Successfully deleted movie!");
                     }
             }
             else if(input == "Done"){Console.WriteLine("Closing application. Enter anything to exit..."); Console.ReadLine(); done = true;}
@@ -93,9 +96,5 @@ public class Controller
             }                   
         }
         return _newMovie;
-        
-
     }
-    
-
 }
