@@ -1,0 +1,14 @@
+C:\Users\marti\OneDrive\Skrivebord\Kodehode\C#\Oppgaver\MVC\bin\Debug\net8.0\MVC.exe
+C:\Users\marti\OneDrive\Skrivebord\Kodehode\C#\Oppgaver\MVC\bin\Debug\net8.0\MVC.deps.json
+C:\Users\marti\OneDrive\Skrivebord\Kodehode\C#\Oppgaver\MVC\bin\Debug\net8.0\MVC.runtimeconfig.json
+C:\Users\marti\OneDrive\Skrivebord\Kodehode\C#\Oppgaver\MVC\bin\Debug\net8.0\MVC.dll
+C:\Users\marti\OneDrive\Skrivebord\Kodehode\C#\Oppgaver\MVC\bin\Debug\net8.0\MVC.pdb
+C:\Users\marti\OneDrive\Skrivebord\Kodehode\C#\Oppgaver\MVC\obj\Debug\net8.0\MVC.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\marti\OneDrive\Skrivebord\Kodehode\C#\Oppgaver\MVC\obj\Debug\net8.0\MVC.AssemblyInfoInputs.cache
+C:\Users\marti\OneDrive\Skrivebord\Kodehode\C#\Oppgaver\MVC\obj\Debug\net8.0\MVC.AssemblyInfo.cs
+C:\Users\marti\OneDrive\Skrivebord\Kodehode\C#\Oppgaver\MVC\obj\Debug\net8.0\MVC.csproj.CoreCompileInputs.cache
+C:\Users\marti\OneDrive\Skrivebord\Kodehode\C#\Oppgaver\MVC\obj\Debug\net8.0\MVC.dll
+C:\Users\marti\OneDrive\Skrivebord\Kodehode\C#\Oppgaver\MVC\obj\Debug\net8.0\refint\MVC.dll
+C:\Users\marti\OneDrive\Skrivebord\Kodehode\C#\Oppgaver\MVC\obj\Debug\net8.0\MVC.pdb
+C:\Users\marti\OneDrive\Skrivebord\Kodehode\C#\Oppgaver\MVC\obj\Debug\net8.0\MVC.genruntimeconfig.cache
+C:\Users\marti\OneDrive\Skrivebord\Kodehode\C#\Oppgaver\MVC\obj\Debug\net8.0\ref\MVC.dll
